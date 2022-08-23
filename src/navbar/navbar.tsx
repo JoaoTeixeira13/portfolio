@@ -13,7 +13,6 @@ import {
 export default function Navbar() {
     return (
         <div id="navbar">
-            <h1>This is the Navbar component</h1>
             <div>
                 <Link
                     activeClass="active"
@@ -44,6 +43,16 @@ export default function Navbar() {
                     duration={500}
                 >
                     <h4>Skills</h4>
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    // offset={50}
+                    duration={500}
+                >
+                    <h4>Contact</h4>
                 </Link>
             </div>
         </div>

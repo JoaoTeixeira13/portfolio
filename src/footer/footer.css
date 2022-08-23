@@ -1,3 +1,9 @@
-#footer{
+#footer {
     height: 100px;
+    background-color: #2e0953;
+    color: #ece0d1;
+}
+
+#footer h1 {
+    margin: 0;
 }

@@ -4,6 +4,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    background-color: #2e0953;
+    color: #ece0d1;
 }
 
 #navbar div {
