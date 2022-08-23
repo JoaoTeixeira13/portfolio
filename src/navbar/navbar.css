@@ -1,11 +1,17 @@
 #navbar {
+    width: 100%;
     height: 100px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    background-color: #2e0953;
+    background-color: rgba(46, 9, 83, 0.8);
     color: #ece0d1;
+    position: fixed;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 2;
+    border: 1px solid #230640;
 }
 
 #navbar div {
@@ -13,4 +19,72 @@
 }
 #navbar div h4 {
     margin: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+#navbar div h4:hover,
+#navbar div h4:active {
+    color: #f806cc;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    #navbar .appNavbar {
+        display: none;
+    }
+}
+
+.appNavbarMobile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ece0d1;
+    color: #2e0953;
+    margin-right: 20px;
+}
+.appNavbarMobile svg {
+    width: 30px;
+    height: 30px;
+}
+
+.appNavbarMobile div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    color: #f806cc;
+
+    padding: 1rem;
+
+    width: 85%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba (168, 168, 168, 0.15);
+}
+@media screen and (min-width: 900px) {
+    #navbar .appNavbarMobile {
+        display: none;
+    }
+}
+.appNavbarMobile .closingMobile {
+    width: 35px;
+    height: 35px;
+    margin: 0.5rem 1rem;
+}
+.mobileSlide {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.mobileSlide h4{
+    
 }
