@@ -1,8 +1,38 @@
 #header {
-    height: 50vh;
+    position: relative;
     background-color: #ece0d1;
     color: #2e0953;
 }
-#header h1 {
-    margin: 0;
+.appHeader {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    padding: 6rem 2rem 0;
+}
+.profilePicture {
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 2000px) {
+    .appHeader {
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .appHeader {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 900px) {
+    .profilePicture {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .appHeader {
+        padding: 6rem 1rem 2rem;
+    }
 }

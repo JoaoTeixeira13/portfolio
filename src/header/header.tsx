@@ -2,6 +2,17 @@ import "./header.css";
 import { motion } from "framer-motion";
 
 export default function Header() {
+    const scaleVariants = {
+        whileInView: {
+            scale: [0, 1],
+            opacity: [0, 1],
+            transition: {
+                duration: 1,
+                ease: "easeInOut",
+            },
+        },
+    };
+
     return (
         <div id="header" className="appHeader appFlex">
             <motion.div
@@ -27,9 +38,19 @@ export default function Header() {
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className="appHeaderImg"
             >
-                <img src="/joao.jpg" />
+                <img src="/joao.jpg" alt="profile picture" className="profilePicture"/>
+                <motion.img
+                    whileInView={{ scale: [0, 1] }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    src="/circle.svg"
+                    className="overlayCircle"
+                />
             </motion.div>
-            <motion.div></motion.div>
+            <motion.div
+                variants={scaleVariants}
+                whileInView={scaleVariants.whileInView}
+                className="appHeaderCircles"
+            ></motion.div>
         </div>
     );
 }
