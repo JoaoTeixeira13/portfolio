@@ -57,11 +57,11 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-    color: #f806cc;
+    color: #2e0953;
 
     padding: 1rem;
 
-    width: 85%;
+    width: 75%;
     height: 100vh;
 
     display: flex;
@@ -69,6 +69,10 @@
     align-items: flex-end;
     flex-direction: column;
     box-shadow: 0 0 20px rgba (168, 168, 168, 0.15);
+}
+.appNavbarMobile div h4:hover,
+.appNavbarMobile .closingMobile:hover {
+    color: #f806cc;
 }
 @media screen and (min-width: 900px) {
     #navbar .appNavbarMobile {
@@ -79,12 +83,15 @@
     width: 35px;
     height: 35px;
     margin: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 .mobileSlide {
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    background-color: rgba(217, 200, 181, 0.98);
 }
-.mobileSlide h4{
-    
+#navbar .mobileSlide {
+    justify-content: flex-start;
+    padding-right: 50px;
 }

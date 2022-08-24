@@ -12,7 +12,7 @@ import Footer from "./footer/footer";
 export default function App() {
     return (
         <div className="App">
-            <Navbar />
+            {/* <Navbar /> */}
             <Header />
             <About />
             <Work />
