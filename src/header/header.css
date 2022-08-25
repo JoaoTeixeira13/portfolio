@@ -5,10 +5,10 @@
 }
 .appHeader {
     flex: 1;
+    padding: 6rem 0;
     height: 100%;
     width: 100%;
     flex-direction: row;
-    padding: 6rem 2rem 0;
 }
 .profilePicture {
     border-radius: 50%;
@@ -33,6 +33,80 @@
 
 @media screen and (max-width: 450px) {
     .appHeader {
-        padding: 6rem 1rem 2rem;
+        /* padding: 6rem 1rem 2rem; */
     }
+}
+
+.appHeaderInfo {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+@media screen and (max-width: 2000px) {
+    .appHeaderInfo {
+        width: 100%;
+        margin-right: 0rem;
+    }
+}
+
+.appHeaderBadge {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.tagCmp,
+.badgeCmp {
+    padding: 1rem 2rem;
+    border: white;
+    border-radius: 15px;
+    flex-direction: row;
+    width: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.tagCmp {
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.tagCmp p {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: right;
+}
+.badgeCmp span {
+    font-size: 2.5rem;
+}
+@media screen and (min-width: 2000px) {
+    .badgeCmp span {
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .appHeaderBadge {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+/* .appHeaderCircles {
+    flex: 0.75;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    margin-left: 1rem;
+} */
+
+.appHeaderImg {
+    flex: 1;
+    height: 100%;
+    justify-content: ;
+
 }
