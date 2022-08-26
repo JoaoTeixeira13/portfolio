@@ -1,8 +1,42 @@
-#about{
-    height: 50vh;
+#about {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
     background-color: #2e0953;
     color: #ece0d1;
 }
-#about h1 {
-    margin: 0;
+
+.appProfiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.profileItem {
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.profileItem img {
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 2000px) {
+    .profileItem {
+        width: 370px;
+        margin: 2rem 4rem;
+    }
+
+    .profileItem img {
+        height: 320px;
+    }
 }
