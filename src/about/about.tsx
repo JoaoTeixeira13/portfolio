@@ -2,11 +2,13 @@ import "./about.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const abouts: {
+interface About {
     title: string;
     description: string;
     imgUrl: string;
-}[] = [
+}
+
+const abouts: About[] = [
     {
         title: "Full Stack Web Development",
         description:
@@ -37,35 +39,26 @@ export default function About() {
                 functionality.{" "}
             </h2>
             <div className="appProfiles">
-                {abouts.map(
-                    (
-                        about: {
-                            title: string;
-                            description: string;
-                            imgUrl: string;
-                        },
-                        index: number
-                    ) => {
-                        return (
-                            <>
-                                <motion.div
-                                    whileInView={{ opacity: 1 }}
-                                    whileHover={{ scale: 1.1 }}
-                                    transition={{
-                                        duration: 0.5,
-                                        type: "tween",
-                                    }}
-                                    className="profileItem"
-                                    key={about.title + index}
-                                >
-                                    <img src={about.imgUrl} alt={about.title} />
-                                    <h2 className="boldText">{about.title}</h2>
-                                    <p className="pText">{about.description}</p>
-                                </motion.div>
-                            </>
-                        );
-                    }
-                )}
+                {abouts.map((each: About, index: number) => {
+                    return (
+                        <>
+                            <motion.div
+                                whileInView={{ opacity: 1 }}
+                                whileHover={{ scale: 1.1 }}
+                                transition={{
+                                    duration: 0.5,
+                                    type: "tween",
+                                }}
+                                className="profileItem"
+                                key={each.title + index}
+                            >
+                                <img src={each.imgUrl} alt={each.title} />
+                                <h2 className="boldText">{each.title}</h2>
+                                <p className="pText">{each.description}</p>
+                            </motion.div>
+                        </>
+                    );
+                })}
             </div>
         </div>
     );
