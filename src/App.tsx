@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 import Navbar from "./navbar/navbar";
 import Header from "./header/header";
-import About from "./about/about";
+import AboutMe from "./about/about";
 import Work from "./work/work";
 import Skills from "./skills/skills";
 import Contact from "./contact/contact";
@@ -14,7 +14,7 @@ export default function App() {
         <div className="App">
             <Navbar />
             <Header />
-            <About />
+            <AboutMe />
             <Work />
             <Skills />
             <Contact />
