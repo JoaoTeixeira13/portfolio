@@ -3,16 +3,6 @@ import { motion } from "framer-motion";
 import AppWrap from "../wrapper/appWrap";
 
 const Header = () => {
-    const scaleVariants = {
-        whileInView: {
-            scale: [0, 1],
-            opacity: [0, 1],
-            transition: {
-                duration: 1,
-                ease: "easeInOut",
-            },
-        },
-    };
 
     return (
         <div className="appHeader appFlex">
@@ -51,13 +41,9 @@ const Header = () => {
                     className="overlayCircle"
                 />
             </motion.div>
-            <motion.div
-                variants={scaleVariants}
-                whileInView={scaleVariants.whileInView}
-                className="appHeaderCircles"
-            ></motion.div>
+            
         </div>
     );
 };
 
-export default AppWrap(Header, "home", ["headerApp"]);
+export default AppWrap(Header, "home", "");

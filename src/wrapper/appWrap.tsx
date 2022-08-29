@@ -4,7 +4,7 @@ import NavigationDots from "../navigationDots";
 export default function AppWrap(
     Component: Function,
     idName: string,
-    classNames: string[]
+    classNames: string
 ) {
     return function HOC() {
         return (

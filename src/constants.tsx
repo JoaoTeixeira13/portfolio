@@ -1,4 +1,7 @@
 import { About } from "./interfaces";
+import { ScaleVariants } from "./interfaces";
+
+//about section
 
 export const abouts: About[] = [
     {
@@ -31,3 +34,16 @@ export const sections: string[] = [
     "skills",
     "contact",
 ];
+
+//skills
+
+export const scaleVariants: ScaleVariants = {
+    whileInView: {
+        scale: [0, 1],
+        opacity: [0, 1],
+        transition: {
+            duration: 1,
+            ease: "easeInOut",
+        },
+    },
+};
