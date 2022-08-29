@@ -1,7 +1,8 @@
 import "./header.css";
 import { motion } from "framer-motion";
+import AppWrap from "../wrapper/appWrap";
 
-export default function Header() {
+const Header = () => {
     const scaleVariants = {
         whileInView: {
             scale: [0, 1],
@@ -14,7 +15,7 @@ export default function Header() {
     };
 
     return (
-        <div id="header" className="appHeader appFlex">
+        <div className="appHeader appFlex">
             <motion.div
                 whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.5 }}
@@ -38,7 +39,11 @@ export default function Header() {
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className="appHeaderImg"
             >
-                <img src="/joao.jpg" alt="profile picture" className="profilePicture"/>
+                <img
+                    src="/joao.jpg"
+                    alt="profile picture"
+                    className="profilePicture"
+                />
                 <motion.img
                     whileInView={{ scale: [0, 1] }}
                     transition={{ duration: 1, ease: "easeInOut" }}
@@ -53,4 +58,6 @@ export default function Header() {
             ></motion.div>
         </div>
     );
-}
+};
+
+export default AppWrap(Header, "home", ["headerApp"]);

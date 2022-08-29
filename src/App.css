@@ -1,21 +1,113 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
-
-
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 1rem;
 }
 
+.socialMedia div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 2000px) {
+    .socialMedia div {
+        width: 70px;
+        height: 70px;
+
+        margin: 0.5rem 0;
+    }
+
+    .socialMedia div svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.appContainer {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.appFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appWrapper {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 4rem 2rem;
+}
+
+@media screen and (max-width: 450px) {
+    .appWrapper {
+        padding: 4rem 1rem 2rem;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 1rem;
+}
+
+.navigation-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #cbcbcb;
+    margin: 0.5rem;
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 2000px) {
+    .navigation-dot {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navigation,
+    .socialMedia {
+        display: none;
+    }
+}
+
+#about.appContainer {
+    flex-direction: row;
+}

@@ -12,6 +12,7 @@ import {
 } from "react-scroll";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { sections } from "../constants";
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(false);
@@ -19,46 +20,19 @@ export default function Navbar() {
     return (
         <nav id="navbar">
             <div className="appNavbar">
-                <Link
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    // offset={50}
-                    duration={500}
-                >
-                    <h4>About</h4>
-                </Link>
-                <Link
-                    activeClass="active"
-                    to="work"
-                    spy={true}
-                    smooth={true}
-                    // offset={50}
-                    duration={500}
-                >
-                    <h4>Work</h4>
-                </Link>
-                <Link
-                    activeClass="active"
-                    to="skills"
-                    spy={true}
-                    smooth={true}
-                    // offset={50}
-                    duration={500}
-                >
-                    <h4>Skills</h4>
-                </Link>
-                <Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    // offset={50}
-                    duration={500}
-                >
-                    <h4>Contact</h4>
-                </Link>
+                {sections.map((each: string, index: number) => (
+                    <Link
+                        activeClass="active"
+                        to={each}
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={500}
+                        key={each + index}
+                    >
+                        <h4 onClick={() => setToggle(false)}>{each}</h4>
+                    </Link>
+                ))}
             </div>
             <div className="appNavbarMobile">
                 <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -73,48 +47,22 @@ export default function Navbar() {
                                 className="closingMobile"
                                 onClick={() => setToggle(false)}
                             />
-                            <Link
-                                activeClass="active"
-                                to="about"
-                                spy={true}
-                                smooth={true}
-                                // offset={50}
-                                duration={500}
-                            >
-                                <h4 onClick={() => setToggle(false)}>About</h4>
-                            </Link>
-                            <Link
-                                activeClass="active"
-                                to="work"
-                                spy={true}
-                                smooth={true}
-                                // offset={50}
-                                duration={500}
-                            >
-                                <h4 onClick={() => setToggle(false)}>Work</h4>
-                            </Link>
-                            <Link
-                                activeClass="active"
-                                to="skills"
-                                spy={true}
-                                smooth={true}
-                                // offset={50}
-                                duration={500}
-                            >
-                                <h4 onClick={() => setToggle(false)}>Skills</h4>
-                            </Link>
-                            <Link
-                                activeClass="active"
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                // offset={50}
-                                duration={500}
-                            >
-                                <h4 onClick={() => setToggle(false)}>
-                                    Contact
-                                </h4>
-                            </Link>
+
+                            {sections.map((each: string, index: number) => (
+                                <Link
+                                    activeClass="active"
+                                    to={each}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-80}
+                                    duration={500}
+                                    key={each + index}
+                                >
+                                    <h4 onClick={() => setToggle(false)}>
+                                        {each}
+                                    </h4>
+                                </Link>
+                            ))}
                         </div>
                     </motion.div>
                 )}
