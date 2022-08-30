@@ -47,3 +47,13 @@ export const scaleVariants: ScaleVariants = {
         },
     },
 };
+
+// work
+
+export const workFilter: string[] = [
+    "Single Page Application",
+    "Web Application",
+    "React JS",
+    "Vue JS",
+    "All",
+];
