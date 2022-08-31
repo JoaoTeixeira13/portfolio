@@ -24,3 +24,14 @@ export interface ScaleVariants {
         };
     };
 }
+
+// work
+
+export interface PortfolioWork {
+    id: number;
+    title: string;
+    description: string;
+    repositoryUrl: string;
+    imageUrl: string;
+    tag: string[];
+}

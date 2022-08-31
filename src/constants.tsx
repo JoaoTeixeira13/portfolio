@@ -1,5 +1,6 @@
 import { About } from "./interfaces";
 import { ScaleVariants } from "./interfaces";
+import { PortfolioWork } from "./interfaces";
 
 //about section
 
@@ -56,4 +57,52 @@ export const workFilter: string[] = [
     "React JS",
     "Vue JS",
     "All",
+];
+
+export const portfolioWorks: PortfolioWork[] = [
+    {
+        id: 1,
+        title: "Circe",
+        description:
+            "A single page application that allows users to trade plants with each other.",
+        repositoryUrl: "https://github.com/JoaoTeixeira13/circe",
+        imageUrl: "/works/circe.jpg",
+        tag: ["Single Page Application", "Web Application", "React JS", "All"],
+    },
+    {
+        id: 2,
+        title: "Social Network",
+        description:
+            "A single page application that allows users to join a social network.",
+        repositoryUrl: "https://github.com/JoaoTeixeira13/social-network",
+        imageUrl: "/works/socialNetwork.jpg",
+        tag: ["Single Page Application", "Web Application", "React JS", "All"],
+    },
+    {
+        id: 3,
+        title: "Image Board",
+        description:
+            "An Instagram-like, single page application open to anyone to post images with titles and descriptions, as well as comments.",
+        repositoryUrl: "https://github.com/JoaoTeixeira13/image-board",
+        imageUrl: "/works/imageBoard.jpg",
+        tag: ["Single Page Application", "Web Application", "Vue JS", "All"],
+    },
+    {
+        id: 4,
+        title: "Petition",
+        description:
+            "A website that allows users to register and sign a petition.",
+        repositoryUrl: "https://github.com/JoaoTeixeira13/petition",
+        imageUrl: "/works/petition.jpg",
+        tag: ["Web Application", "All"],
+    },
+    {
+        id: 5,
+        title: "Connect Four",
+        description:
+            "A two-player game of connect-four, where the first user to connect four pieces horizontally, vertically or diagonally wins.",
+        repositoryUrl: "https://github.com/JoaoTeixeira13/connect-four",
+        imageUrl: "/works/connectFour.jpg",
+        tag: ["Web Application", "All"],
+    },
 ];
