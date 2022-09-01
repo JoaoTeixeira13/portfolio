@@ -66,7 +66,7 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A single page application that allows users to trade plants with each other.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/circe",
-        imageUrl: "/works/circe.jpg",
+        imageUrl: "/works/circe.png",
         tag: ["Single Page Application", "Web Application", "React JS", "All"],
     },
     {
@@ -75,7 +75,7 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A single page application that allows users to join a social network.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/social-network",
-        imageUrl: "/works/socialNetwork.jpg",
+        imageUrl: "/works/socialNetwork.png",
         tag: ["Single Page Application", "Web Application", "React JS", "All"],
     },
     {
@@ -84,7 +84,7 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "An Instagram-like, single page application open to anyone to post images with titles and descriptions, as well as comments.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/image-board",
-        imageUrl: "/works/imageBoard.jpg",
+        imageUrl: "/works/imageBoard.png",
         tag: ["Single Page Application", "Web Application", "Vue JS", "All"],
     },
     {
@@ -93,7 +93,7 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A website that allows users to register and sign a petition.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/petition",
-        imageUrl: "/works/petition.jpg",
+        imageUrl: "/works/petition.png",
         tag: ["Web Application", "All"],
     },
     {
@@ -102,7 +102,7 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A two-player game of connect-four, where the first user to connect four pieces horizontally, vertically or diagonally wins.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/connect-four",
-        imageUrl: "/works/connectFour.jpg",
+        imageUrl: "/works/connectFour.png",
         tag: ["Web Application", "All"],
     },
 ];

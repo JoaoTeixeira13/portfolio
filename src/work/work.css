@@ -1,8 +1,30 @@
 #work {
-    height: 50vh;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
     background-color: #ece0d1;
     color: #2e0953;
 }
 #work h1 {
     margin: 0;
+}
+
+.workFilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4rem 0 2rem;
+}
+
+.workFilter .workFilterItem {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
 }

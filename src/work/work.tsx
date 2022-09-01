@@ -1,6 +1,6 @@
 import "./work.css";
 import { useState, useEffect } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../wrapper/appWrap";
 import { workFilter } from "../constants";
@@ -37,39 +37,49 @@ const Work = () => {
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className="workPortfolio"
             >
-                return(
                 {portfolioWorks.map((each: PortfolioWork) => {
-                    <div key={each.id} className="workItem appFlex">
-                        <img src={each.imageUrl} alt={each.title} />
-                        <motion.div
-                            whileHover={{ opacity: [0, 1] }}
-                            transition={{
-                                duration: 0.25,
-                                ease: "easeInOut",
-                                staggerChildren: 0.5,
-                            }}
-                            className="workHover appFlex"
-                        >
-                            <a
-                                href={each.repositoryUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
+                    return (
+                        <div key={each.id}>
+                            <div className="workItem appFlex">
+                                <img src={each.imageUrl} alt={each.title} />
                                 <motion.div
-                                    whileInView={{ scale: [0, 1] }}
-                                    whileHover={{ scale: [1, 0.9] }}
+                                    whileHover={{ opacity: [0, 1] }}
                                     transition={{
                                         duration: 0.25,
+                                        ease: "easeInOut",
+                                        staggerChildren: 0.5,
                                     }}
-                                    className="appFlex"
+                                    className="workHover appFlex"
                                 >
-                                    <AiFillEye />
+                                    <a
+                                        href={each.repositoryUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <motion.div
+                                            whileInView={{ scale: [0, 1] }}
+                                            whileHover={{ scale: [1, 0.9] }}
+                                            transition={{
+                                                duration: 0.25,
+                                            }}
+                                            className="appFlex"
+                                        >
+                                            <AiFillGithub />
+                                        </motion.div>
+                                    </a>
                                 </motion.div>
-                            </a>
-                        </motion.div>
-                    </div>;
+                            </div>
+                            <div className="workContent appFlex">
+                                <h4 className="boldText">{each.title}</h4>
+                                <p className="pText">{each.description}</p>
+
+                                <div className="workTag appFlex">
+                                    <p className="pText"> {each.tag[0]}</p>
+                                </div>
+                            </div>
+                        </div>
+                    );
                 })}
-                )
             </motion.div>
         </>
     );
