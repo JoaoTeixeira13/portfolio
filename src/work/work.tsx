@@ -39,8 +39,8 @@ const Work = () => {
             >
                 {portfolioWorks.map((each: PortfolioWork) => {
                     return (
-                        <div key={each.id}>
-                            <div className="workItem appFlex">
+                        <div key={each.id} className="workItem appFlex">
+                            <div className="workImg appFlex">
                                 <img src={each.imageUrl} alt={each.title} />
                                 <motion.div
                                     whileHover={{ opacity: [0, 1] }}
