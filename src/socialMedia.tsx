@@ -1,4 +1,5 @@
-import { BsGithub, BsLinkedin, BsMailbox } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { GoMail } from "react-icons/go";
 
 export default function SocialMedia() {
     return (
@@ -10,7 +11,7 @@ export default function SocialMedia() {
                 <BsLinkedin />
             </div>
             <div>
-                <BsMailbox />
+                <GoMail />
             </div>
         </div>
     );

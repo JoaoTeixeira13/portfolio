@@ -1,9 +1,8 @@
 import "./footer.css";
 
 export default function Footer() {
-    return (
-        <div id="footer">
-            <h1> This is the footer component.</h1>
-        </div>
-    );
+    const getYear: Function = (): number => {
+        return new Date().getFullYear();
+    };
+    return <div id="footer"> &copy; João Teixeira {getYear()}</div>;
 }

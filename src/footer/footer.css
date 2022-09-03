@@ -1,9 +1,11 @@
 #footer {
-    height: 100px;
+    height: 70px;
     background-color: #2e0953;
     color: #ece0d1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-#footer h1 {
-    margin: 0;
-}

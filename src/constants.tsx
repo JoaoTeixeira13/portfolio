@@ -1,6 +1,7 @@
 import { About } from "./interfaces";
 import { ScaleVariants } from "./interfaces";
 import { PortfolioWork } from "./interfaces";
+import { Skill } from "./interfaces";
 
 //about section
 
@@ -48,6 +49,72 @@ export const scaleVariants: ScaleVariants = {
         },
     },
 };
+
+export const skills: Skill[] = [
+    {
+        id: 1,
+        name: "JavaScript",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 2,
+        name: "TypeScript",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 3,
+        name: "Vue JS",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 4,
+        name: "React JS",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 5,
+        name: "Redux",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 6,
+        name: "Socket.io",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 7,
+        name: "Node JS",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 8,
+        name: "Express JS",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 9,
+        name: "PostgreSql",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        backgroundColor: "",
+    },
+];
 
 // work
 

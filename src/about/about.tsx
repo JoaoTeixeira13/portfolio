@@ -1,6 +1,5 @@
 import "./about.css";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import { About } from "../interfaces";
 import { abouts } from "../constants";
 import AppWrap from "../wrapper/appWrap";

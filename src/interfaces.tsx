@@ -35,3 +35,17 @@ export interface PortfolioWork {
     imageUrl: string;
     tag: string[];
 }
+
+export interface AnimatedCard {
+    y: number;
+    opacity: number;
+}
+
+//skills
+
+export interface Skill {
+    id: number;
+    name: string;
+    imageUrl: string;
+    backgroundColor: string;
+}

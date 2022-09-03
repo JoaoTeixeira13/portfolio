@@ -1,21 +1,12 @@
 import { useState } from "react";
 import "./navbar.css";
-import * as Scroll from "react-scroll";
-import {
-    Link,
-    Button,
-    Element,
-    Events,
-    animateScroll as scroll,
-    scrollSpy,
-    scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { sections } from "../constants";
 
 export default function Navbar() {
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState<boolean>(false);
 
     return (
         <nav id="navbar">

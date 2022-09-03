@@ -6,13 +6,18 @@ import AppWrap from "../wrapper/appWrap";
 import { workFilter } from "../constants";
 import { portfolioWorks } from "../constants";
 import { PortfolioWork } from "../interfaces";
+import { AnimatedCard } from "../interfaces";
 
 const Work = () => {
-    const [filterWork, setFilterWork] = useState(portfolioWorks);
-    const [activeFilter, setActiveFilter] = useState("All");
-    const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+    const [filterWork, setFilterWork] =
+        useState<PortfolioWork[]>(portfolioWorks);
+    const [activeFilter, setActiveFilter] = useState<string>("All");
+    const [animateCard, setAnimateCard] = useState<AnimatedCard>({
+        y: 0,
+        opacity: 1,
+    });
 
-    useEffect(() => {
+    useEffect((): void => {
         setAnimateCard({ y: 100, opacity: 0 });
         setTimeout(() => {
             setAnimateCard({ y: 0, opacity: 1 });
