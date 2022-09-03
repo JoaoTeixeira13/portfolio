@@ -81,8 +81,7 @@ export const portfolioWorks: PortfolioWork[] = [
     {
         id: 3,
         title: "Image Board",
-        description:
-            "An Instagram-like, single page application open to anyone to post images with titles and descriptions, as well as comments.",
+        description: "An Instagram-like, single page image board application.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/image-board",
         imageUrl: "/works/imageBoard.png",
         tag: ["Single Page Application", "Web Application", "Vue JS", "All"],
@@ -100,7 +99,7 @@ export const portfolioWorks: PortfolioWork[] = [
         id: 5,
         title: "Connect Four",
         description:
-            "A two-player game of connect-four, where the first user to connect four pieces horizontally, vertically or diagonally wins.",
+            "A two-player game where the first user to connect four pieces wins.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/connect-four",
         imageUrl: "/works/connectFour.png",
         tag: ["Web Application", "All"],

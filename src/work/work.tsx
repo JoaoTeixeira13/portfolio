@@ -8,12 +8,34 @@ import { portfolioWorks } from "../constants";
 import { PortfolioWork } from "../interfaces";
 
 const Work = () => {
+    const [filterWork, setFilterWork] = useState(portfolioWorks);
     const [activeFilter, setActiveFilter] = useState("All");
     const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
+    useEffect(() => {
+        setAnimateCard({ y: 100, opacity: 0 });
+        setTimeout(() => {
+            setAnimateCard({ y: 0, opacity: 1 });
+        }, 500);
+
+        if (activeFilter === "All") {
+            setFilterWork(portfolioWorks);
+        } else {
+            let filteredDisplay: PortfolioWork[] = [];
+
+            for (let i = 0; i < portfolioWorks.length; i++) {
+                if (portfolioWorks[i].tag.includes(activeFilter)) {
+                    filteredDisplay.push(portfolioWorks[i]);
+                }
+            }
+            setFilterWork(filteredDisplay);
+        }
+    }, [activeFilter]);
+
     const handleWorkFilter: Function = (each: string) => {
-        console.log("user clicked on item");
+        setActiveFilter(each);
     };
+
     return (
         <>
             <h2 className="headText">Some of my works</h2>
@@ -37,7 +59,7 @@ const Work = () => {
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className="workPortfolio"
             >
-                {portfolioWorks.map((each: PortfolioWork) => {
+                {filterWork.map((each: PortfolioWork) => {
                     return (
                         <div key={each.id} className="workItem appFlex">
                             <div className="workImg appFlex">

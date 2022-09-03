@@ -109,3 +109,38 @@
     opacity: 0;
     transition: all 0.3s ease;
 }
+.workHover div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.workHover div svg {
+    width: 50%;
+    height: 50%;
+}
+
+.workContent {
+    padding: 0.5rem;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}
+
+.workContent h4 {
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.workContent .workTag {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    top: -25px;
+}
