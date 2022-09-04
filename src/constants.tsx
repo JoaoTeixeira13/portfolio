@@ -52,6 +52,20 @@ export const scaleVariants: ScaleVariants = {
 
 export const skills: Skill[] = [
     {
+        id: 10,
+        name: "HTML5",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 11,
+        name: "CSS3",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        backgroundColor: "",
+    },
+    {
         id: 1,
         name: "JavaScript",
         imageUrl:
@@ -94,6 +108,21 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 12,
+        name: "jQuery",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 13,
+        name: "Handlebars",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original-wordmark.svg",
+        backgroundColor: "",
+    },
+
+    {
         id: 7,
         name: "Node JS",
         imageUrl:
@@ -112,6 +141,13 @@ export const skills: Skill[] = [
         name: "PostgreSql",
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 14,
+        name: "Git",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         backgroundColor: "",
     },
 ];
