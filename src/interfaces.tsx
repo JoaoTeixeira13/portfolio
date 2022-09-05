@@ -49,3 +49,10 @@ export interface Skill {
     imageUrl: string;
     backgroundColor: string;
 }
+
+export interface Experience {
+    id: number;
+    name: string;
+    company: string;
+    description: string;
+}

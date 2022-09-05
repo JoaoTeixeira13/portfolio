@@ -2,6 +2,7 @@ import { About } from "./interfaces";
 import { ScaleVariants } from "./interfaces";
 import { PortfolioWork } from "./interfaces";
 import { Skill } from "./interfaces";
+import { Experience } from "./interfaces";
 
 //about section
 
@@ -149,6 +150,23 @@ export const skills: Skill[] = [
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         backgroundColor: "",
+    },
+];
+
+export const experiences: Experience[] = [
+    {
+        id: 1,
+        name: "Tech orientation",
+        company: "StartSteps",
+        description:
+            "Project based topics: Data Analytics, Web Development, UX/UI Design, Cybersecurity, Digital Marketing, Project Management, Agile Methodologies.",
+    },
+    {
+        id: 2,
+        name: "Full Stack Web Developer",
+        company: "Spiced Academy",
+        description:
+            "12 weeks intensive full time program. Tool Stack: JavaScript, HTML, CSS, jQuery, Vue.js, Node.js, SQL, React and more",
     },
 ];
 
