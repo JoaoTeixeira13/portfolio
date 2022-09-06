@@ -1,9 +1,12 @@
 import "./contact.css";
+import AppWrap from "../wrapper/appWrap";
 
-export default function Contact() {
+const Contact = () => {
     return (
-        <div id="contact">
-            <h1>This is the contact component.</h1>
+        <div>
+            <h2 className="headText">Lets have a chat!</h2>
         </div>
     );
-}
+};
+
+export default AppWrap(Contact, "contact", "");

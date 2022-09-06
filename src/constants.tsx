@@ -165,8 +165,7 @@ export const experiences: Experience[] = [
         id: 2,
         name: "Full Stack Web Developer",
         company: "Spiced Academy",
-        description:
-            "12 weeks intensive full time program. Tool Stack: JavaScript, HTML, CSS, jQuery, Vue.js, Node.js, SQL, React and more",
+        description: "12 weeks intensive full time program.",
     },
 ];
 

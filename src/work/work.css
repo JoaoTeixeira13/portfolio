@@ -21,8 +21,8 @@
 .workFilter .workFilterItem {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    background-color: #fff;
-    color: #000;
+    background-color: #2e0953;
+    color: #fff;
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;

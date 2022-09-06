@@ -24,7 +24,7 @@
 }
 #navbar div h4:hover,
 #navbar div h4:active {
-    color: #f806cc;
+    color: #e46b14;
     cursor: pointer;
 }
 
@@ -72,7 +72,7 @@
 }
 .appNavbarMobile div h4:hover,
 .appNavbarMobile .closingMobile:hover {
-    color: #f806cc;
+    color: #e46b14;
 }
 @media screen and (min-width: 900px) {
     #navbar .appNavbarMobile {
