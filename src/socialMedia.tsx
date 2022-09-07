@@ -1,5 +1,4 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { GoMail } from "react-icons/go";
 
 export default function SocialMedia() {
     return (
@@ -23,11 +22,7 @@ export default function SocialMedia() {
                     <BsLinkedin />
                 </a>
             </div>
-            <div>
-                <a href="mailto:j.teixeira.dev@gmail.com">
-                    <GoMail />
-                </a>
-            </div>
+            
         </div>
     );
 }
