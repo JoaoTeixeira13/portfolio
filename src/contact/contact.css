@@ -5,3 +5,18 @@
 #contact h1 {
     margin: 0;
 }
+#contact .socialMedia {
+    visibility: hidden;
+}
+#contact .socialMediaContact .socialMedia {
+    visibility: visible;
+}
+
+.contactCard a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.contactCard a:hover {
+    color: #e46b14;
+}

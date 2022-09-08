@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    width: 100vw;
 }
 
 .App-header {
@@ -76,6 +77,13 @@
     padding: 4rem 2rem;
 }
 
+.pText {
+    font-weight: 500;
+}
+.boldText {
+    font-weight: 900;
+}
+
 @media screen and (max-width: 450px) {
     .appWrapper {
         padding: 4rem 1rem 2rem;
@@ -117,6 +125,12 @@
     .socialMedia {
         display: none;
     }
+}
+#contact .socialMedia {
+    display: none;
+}
+#contact .socialMediaContact .socialMedia {
+    display: block;
 }
 
 #about.appContainer {

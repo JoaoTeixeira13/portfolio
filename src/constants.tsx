@@ -186,7 +186,9 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A single page application that allows users to trade plants with each other.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/circe",
-        imageUrl: "/works/circe.png",
+        imageUrl: "/works/circe.gif",
+        techStack:
+            "JavaScript, AWS S3, Node.js, Express.js, PostgreSQL, React & Redux.",
         tag: ["Single Page Application", "Web Application", "React JS", "All"],
     },
     {
@@ -195,7 +197,9 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A single page application that allows users to join a social network.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/social-network",
-        imageUrl: "/works/socialNetwork.png",
+        imageUrl: "/works/socialNetwork.gif",
+        techStack:
+            "JavaScript, AWS S3, Node.js, Express.js, PostgreSQL, Socket.IO, React & Redux.",
         tag: ["Single Page Application", "Web Application", "React JS", "All"],
     },
     {
@@ -203,7 +207,9 @@ export const portfolioWorks: PortfolioWork[] = [
         title: "Image Board",
         description: "An Instagram-like, single page image board application.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/image-board",
-        imageUrl: "/works/imageBoard.png",
+        imageUrl: "/works/imageBoard.gif",
+        techStack:
+            "JavaScript, Vue.js, Node.js, Express.js, PostgreSQL, AWS S3.",
         tag: ["Single Page Application", "Web Application", "Vue JS", "All"],
     },
     {
@@ -212,7 +218,9 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A website that allows users to register and sign a petition.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/petition",
-        imageUrl: "/works/petition.png",
+        imageUrl: "/works/petition.gif",
+        techStack:
+            "JavaScript, Handlebars, Node.js, Express.js, PostgreSQL, Heroku.",
         tag: ["Web Application", "All"],
     },
     {
@@ -221,7 +229,8 @@ export const portfolioWorks: PortfolioWork[] = [
         description:
             "A two-player game where the first user to connect four pieces wins.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/connect-four",
-        imageUrl: "/works/connectFour.png",
+        imageUrl: "/works/connectFour.gif",
+        techStack: "JavaScript, HTML, CSS & jQuery",
         tag: ["Web Application", "All"],
     },
 ];

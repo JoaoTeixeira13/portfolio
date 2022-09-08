@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import AppWrap from "../wrapper/appWrap";
 
 const Header = () => {
-
     return (
         <div className="appHeader appFlex">
             <motion.div
@@ -41,7 +40,6 @@ const Header = () => {
                     className="overlayCircle"
                 />
             </motion.div>
-            
         </div>
     );
 };

@@ -99,6 +99,10 @@ const Work = () => {
                             <div className="workContent appFlex">
                                 <h4 className="boldText">{each.title}</h4>
                                 <p className="pText">{each.description}</p>
+                                <p className="pText">
+                                    <strong>TechStack: </strong>
+                                    {each.techStack}
+                                </p>
 
                                 <div className="workTag appFlex">
                                     <p className="pText"> {each.tag[0]}</p>

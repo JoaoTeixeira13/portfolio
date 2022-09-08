@@ -6,7 +6,7 @@ import AppWrap from "../wrapper/appWrap";
 
 const AboutMe = () => {
     return (
-        <div>
+        <>
             <h2 className="headText">
                 {" "}
                 I am keen on learning new technologies, logic and systems'
@@ -33,7 +33,7 @@ const AboutMe = () => {
                     );
                 })}
             </div>
-        </div>
+        </>
     );
 };
 

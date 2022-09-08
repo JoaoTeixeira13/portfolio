@@ -33,6 +33,7 @@ export interface PortfolioWork {
     description: string;
     repositoryUrl: string;
     imageUrl: string;
+    techStack: string;
     tag: string[];
 }
 
