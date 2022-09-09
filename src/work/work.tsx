@@ -43,7 +43,7 @@ const Work = () => {
 
     return (
         <>
-            <h2 className="headText">Some of my works</h2>
+            <h2 className="headText">Some things I have built</h2>
             <div className="workFilter">
                 {workFilter.map((each: string, index: number) => {
                     return (

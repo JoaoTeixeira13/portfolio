@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="badgeCmp appFlex">
                         <span>👋🏼</span>
                         <div style={{ marginLeft: 20 }}>
-                            <p className="pText">Hello, I am</p>
+                            <p className="pText">Hello World! I am</p>
                             <h1 className="headText">João</h1>
                         </div>
                     </div>
