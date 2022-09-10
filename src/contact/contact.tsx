@@ -11,10 +11,12 @@ const Contact = () => {
                 <div className="contactCard">
                     <a href="mailto:j.teixeira.dev@gmail.com" className="pText">
                         <GoMail />
+                    </a>
+                    <a href="mailto:j.teixeira.dev@gmail.com" className="pText">
                         <button className="contactButton">Contact me</button>
                     </a>
                 </div>
-               
+
                 <div className="socialMediaContact contactCard">
                     <SocialMedia />
                 </div>
