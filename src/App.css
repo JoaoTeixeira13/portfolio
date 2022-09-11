@@ -1,6 +1,7 @@
 .App {
     text-align: center;
     width: 100vw;
+    color: #949db8;
 }
 
 .App-header {
@@ -11,7 +12,6 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
 }
 
 .socialMedia {
@@ -28,7 +28,8 @@
     transition: all 0.3s ease-in-out;
 }
 .socialMedia a:hover {
-    color: #e46b14;
+    color: #5df6d7;
+    filter: drop-shadow(0 0 20px rgba(93, 246, 215, 0.4));
 }
 
 .socialMedia div {
@@ -103,14 +104,15 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #cbcbcb;
+    background-color: #949db8;
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;
 }
 .navigation-dot:hover {
-    background-color: #bc8a66;
+    background-color: #9ee4d666;
     cursor: pointer;
+    box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
 }
 
 @media screen and (min-width: 2000px) {

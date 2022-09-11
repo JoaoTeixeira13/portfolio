@@ -1,7 +1,6 @@
 #home {
     position: relative;
-    background-color: #ece0d1;
-    color: #2e0953;
+    background-color: #14243e;
 }
 .appHeader {
     flex: 1;
@@ -68,7 +67,7 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
 }
 .tagCmp {
     flex-direction: column;

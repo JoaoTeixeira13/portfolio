@@ -1,12 +1,11 @@
 #navbar {
     width: 100%;
     height: 80px;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    background-color: rgba(46, 9, 83, 0.8);
-    color: #ece0d1;
+    flex-direction: row;
+    background-color: rgba(9, 20, 44, 0.8);
     position: fixed;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -24,13 +23,26 @@
 }
 #navbar div h4:hover,
 #navbar div h4:active {
-    color: #e46b14;
+    color: #5df6d7;
     cursor: pointer;
+}
+.icon {
+    border: 3px solid #5df6d7;
+    padding: 13px;
+    border-radius: 50%;
+    margin-left: 2rem;
+    color: #5df6d7;
+    align-self: center;
 }
 
 @media screen and (max-width: 900px) {
     #navbar .appNavbar {
         display: none;
+    }
+    .icon {
+        padding: 8px;
+        border: 2px solid #5df6d7;
+        font-size: 0.8rem;
     }
 }
 
@@ -72,11 +84,31 @@
 }
 .appNavbarMobile div h4:hover,
 .appNavbarMobile .closingMobile:hover {
-    color: #e46b14;
+    color: #5df6d7;
+}
+
+.resume {
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #5df6d7;
+    border-radius: 0.3rem;
 }
 @media screen and (min-width: 900px) {
     #navbar .appNavbarMobile {
         display: none;
+    }
+    .resume {
+        height: 45px;
+        align-self: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    .resume:hover {
+        background-color: rgba(93, 246, 215, 0.4);
+        color: #5df6d7;
     }
 }
 .appNavbarMobile .closingMobile {
@@ -95,3 +127,7 @@
     justify-content: flex-start;
     padding-right: 50px;
 }
+
+/* #navbar div .resume {
+height:45px;
+} */

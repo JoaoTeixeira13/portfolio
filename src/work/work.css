@@ -2,8 +2,7 @@
     flex: 1;
     width: 100%;
     flex-direction: row;
-    background-color: #ece0d1;
-    color: #2e0953;
+    background-color: #14243e;
 }
 #work h1 {
     margin: 0;
@@ -20,9 +19,12 @@
 
 .workFilter .workFilterItem {
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: #2e0953;
-    color: #fff;
+    border-radius: 0.3rem;
+    /* background-color: #949db8; */
+    background-color: transparent;
+    border: 1px solid #5df6d7;
+
+    color: #949db8;
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -30,8 +32,8 @@
 }
 
 .workFilter .workFilterItem:hover {
-    background-color: #e46b14;
-    color: #fff;
+    background-color: #5df6d7;
+    color: #09142c;
 }
 
 @media screen and (min-width: 2000px) {
@@ -41,8 +43,8 @@
     }
 }
 .workFilterItem.itemActive {
-    background-color: #e46b14;
-    color: #fff;
+    background-color: #5df6d7;
+    color: #09142c;
 }
 
 .workPortfolio {
@@ -57,8 +59,8 @@
     margin: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: #fff;
-    color: #2e0953;
+    background-color: #09142c;
+    color: #949db8;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -85,7 +87,12 @@
     }
 }
 .workPortfolio .workItem:hover {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
+}
+.workPortfolio .workItem:hover .boldText {
+    color: #5df6d7;
+    text-shadow: 1px 0 #5df6d7;
+    letter-spacing: 0.5px;
 }
 .workImg {
     width: 100%;
@@ -113,7 +120,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(93, 246, 215, 0.4);
     border-radius: 0.5rem;
     opacity: 0;
     transition: all 0.3s ease;
@@ -150,6 +157,6 @@
     position: absolute;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #09142c;
     top: -25px;
 }

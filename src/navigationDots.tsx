@@ -17,7 +17,7 @@ export default function NavigationDots(props: ActiveProp) {
                     key={each + index}
                     style={
                         props.active === each
-                            ? { backgroundColor: `#e46b14` }
+                            ? { backgroundColor: `#5df6d7` }
                             : {}
                     }
                 ></Link>
