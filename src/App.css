@@ -1,7 +1,10 @@
 .App {
-    text-align: center;
+    text-align: left;
     width: 100vw;
     color: #949db8;
+}
+.headText {
+    color: #e2edfc;
 }
 
 .App-header {
@@ -28,6 +31,7 @@
     transition: all 0.3s ease-in-out;
 }
 .socialMedia a:hover {
+    transform: translateY(-7px);
     color: #5df6d7;
     filter: drop-shadow(0 0 20px rgba(93, 246, 215, 0.4));
 }

@@ -67,21 +67,21 @@ const Work = () => {
                 {filterWork.map((each: PortfolioWork) => {
                     return (
                         <div key={each.id} className="workItem appFlex">
-                            <div className="workImg appFlex">
-                                <img src={each.imageUrl} alt={each.title} />
-                                <motion.div
-                                    whileHover={{ opacity: [0, 1] }}
-                                    transition={{
-                                        duration: 0.25,
-                                        ease: "easeInOut",
-                                        staggerChildren: 0.5,
-                                    }}
-                                    className="workHover appFlex"
-                                >
-                                    <a
-                                        href={each.repositoryUrl}
-                                        target="_blank"
-                                        rel="noreferrer"
+                            <a
+                                href={each.repositoryUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <div className="workImg appFlex">
+                                    <img src={each.imageUrl} alt={each.title} />
+                                    <motion.div
+                                        whileHover={{ opacity: [0, 1] }}
+                                        transition={{
+                                            duration: 0.25,
+                                            ease: "easeInOut",
+                                            staggerChildren: 0.5,
+                                        }}
+                                        className="workHover appFlex"
                                     >
                                         <motion.div
                                             whileInView={{ scale: [0, 1] }}
@@ -93,14 +93,18 @@ const Work = () => {
                                         >
                                             <AiFillGithub />
                                         </motion.div>
-                                    </a>
-                                </motion.div>
-                            </div>
+                                    </motion.div>
+                                </div>
+                            </a>
                             <div className="workContent appFlex">
-                                <h4 className="boldText">{each.title}</h4>
+                                <h4 className="boldText headText">
+                                    {each.title}
+                                </h4>
                                 <p className="pText">{each.description}</p>
                                 <p className="pText">
-                                    <strong>TechStack: </strong>
+                                    <span className="headText">
+                                        <strong>TechStack: </strong>
+                                    </span>
                                     {each.techStack}
                                 </p>
 

@@ -31,7 +31,8 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #e2edfc;
+    transition: all 0.3s ease-in-out;
 }
 
 .skillsItem div img {
@@ -40,7 +41,8 @@
 }
 
 .skillsItem div:hover {
-    box-shadow: 0 0 25px #fef4f5;
+    box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
+    transform: translateY(-7px);
 }
 
 .skillsItem div p {
@@ -55,9 +57,7 @@
     }
     .skillsList {
         margin-right: 0;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 }
 

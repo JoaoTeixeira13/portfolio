@@ -25,6 +25,7 @@
 #navbar div h4:active {
     color: #5df6d7;
     cursor: pointer;
+    transform: translateY(-4px);
 }
 .icon {
     border: 3px solid #5df6d7;
@@ -54,8 +55,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ece0d1;
-    color: #2e0953;
+    background-color: #949db8;
+    color: #14243e;
     margin-right: 20px;
 }
 .appNavbarMobile svg {
@@ -69,7 +70,7 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-    color: #2e0953;
+    color: #949db8;
 
     padding: 1rem;
 
@@ -85,13 +86,12 @@
 .appNavbarMobile div h4:hover,
 .appNavbarMobile .closingMobile:hover {
     color: #5df6d7;
+    transform: translateY(-4px);
 }
 
 .resume {
     color: inherit;
     text-decoration: none;
-    border: 1px solid #5df6d7;
-    border-radius: 0.3rem;
 }
 @media screen and (min-width: 900px) {
     #navbar .appNavbarMobile {
@@ -104,11 +104,14 @@
         display: flex;
         flex-direction: column;
         margin-right: 20px;
+        border: 1px solid #5df6d7;
+        border-radius: 0.3rem;
         transition: all 0.3s ease-in-out;
     }
     .resume:hover {
         background-color: rgba(93, 246, 215, 0.4);
         color: #5df6d7;
+        transform: translateY(-4px);
     }
 }
 .appNavbarMobile .closingMobile {
@@ -121,7 +124,10 @@
 .mobileSlide {
     width: 100%;
     height: 100%;
-    background-color: rgba(217, 200, 181, 0.98);
+    background-color: rgba(9, 20, 44, 0.95);
+}
+.mobileSlide a h4 {
+    font-size: 1.2rem;
 }
 #navbar .mobileSlide {
     justify-content: flex-start;

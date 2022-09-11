@@ -11,21 +11,21 @@ export const abouts: About[] = [
         id: 1,
         title: "Full Stack Web Development",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        imgUrl: "/full-stack.png",
+            "I build things for the web by developing both the front end (client side) and the back end (server side) portions of an application.",
+        imgUrl: "/full-stack.jpg",
     },
     {
         id: 2,
         title: "Backend Development",
         description:
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "By focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers, I ensure web applications perform correctly.",
         imgUrl: "/back-end.jpg",
     },
     {
         id: 3,
         title: "Frontend Development",
         description:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+            "I use JavaScript and its libraries to build interactive web interfaces. I strive to provide users with the best experience possible centered around sound design principles. ",
         imgUrl: "/front-end.jpg",
     },
 ];

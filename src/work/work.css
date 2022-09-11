@@ -20,10 +20,8 @@
 .workFilter .workFilterItem {
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
-    /* background-color: #949db8; */
     background-color: transparent;
     border: 1px solid #5df6d7;
-
     color: #949db8;
     font-weight: 800;
     cursor: pointer;
@@ -34,6 +32,7 @@
 .workFilter .workFilterItem:hover {
     background-color: #5df6d7;
     color: #09142c;
+    box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
 }
 
 @media screen and (min-width: 2000px) {
@@ -43,8 +42,11 @@
     }
 }
 .workFilterItem.itemActive {
+    transform: translateY(-7px);
+
     background-color: #5df6d7;
     color: #09142c;
+    box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
 }
 
 .workPortfolio {
@@ -61,7 +63,6 @@
     border-radius: 0.5rem;
     background-color: #09142c;
     color: #949db8;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -86,8 +87,15 @@
         margin: 1rem;
     }
 }
+@media screen and (max-width: 450px) {
+    .workPortfolio .workItem {
+        margin: 2rem 1rem;
+    }
+}
 .workPortfolio .workItem:hover {
+    transform: translateY(-7px);
     box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
+    border: 1px solid #5df6d7;
 }
 .workPortfolio .workItem:hover .boldText {
     color: #5df6d7;
@@ -129,8 +137,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #e2edfc;
     margin: 1rem;
     font-weight: 800;
     cursor: pointer;
@@ -159,4 +167,8 @@
     border-radius: 10px;
     background-color: #09142c;
     top: -25px;
+}
+
+.workContent .pText{
+    align-self: flex-start;
 }

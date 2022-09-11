@@ -30,11 +30,11 @@
     }
 }
 
-/* @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .appHeader {
-        padding: 6rem 1rem 2rem;
+        padding: 4rem 0;
     }
-} */
+}
 
 .appHeaderInfo {
     flex: 0.65;
@@ -63,7 +63,7 @@
 .tagCmp,
 .badgeCmp {
     padding: 1rem 2rem;
-    border: white;
+    border: 1px solid #5df6d7;
     border-radius: 15px;
     flex-direction: row;
     width: auto;
@@ -90,6 +90,12 @@
     .appHeaderBadge {
         justify-content: flex-start;
         align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .appHeaderBadge {
+        font-size: 1.5rem;
     }
 }
 

@@ -27,7 +27,9 @@ const AboutMe = () => {
                             key={each.id}
                         >
                             <img src={each.imgUrl} alt={each.title} />
-                            <h2 className="boldText">{each.title}</h2>
+                            <h2 className="boldText aboutTitles">
+                                {each.title}
+                            </h2>
                             <p className="pText">{each.description}</p>
                         </motion.div>
                     );
