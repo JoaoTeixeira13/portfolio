@@ -2,7 +2,6 @@
     background-color: #14243e;
     width: 100%;
     flex: 1;
-    /* flex-direction: column; */
 }
 #contact h1 {
     margin: 0;
@@ -55,7 +54,6 @@
     padding: 1rem;
     border-radius: 0.3rem;
     border: 1px solid #5df6d7;
-    color: #5df6d7;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 }
@@ -78,9 +76,12 @@
 .contactButton:hover {
     background-color: rgba(93, 246, 215, 0.4);
 }
-/* .contactCards .contactCard:last-child {
-    background-color: #f2f7fb;
-} */
+.contactCard.textBox {
+    border: none;
+    text-align: center;
+    box-shadow: none;
+    max-width: 500px;
+}
 @media screen and (max-width: 450px) {
     .contactCards,
     .contactCard {

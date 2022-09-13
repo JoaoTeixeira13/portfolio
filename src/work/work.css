@@ -91,6 +91,9 @@
     .workPortfolio .workItem {
         margin: 2rem 1rem;
     }
+    .workFilter {
+        margin: 4rem 1.5rem 2rem;
+    }
 }
 .workPortfolio .workItem:hover {
     transform: translateY(-7px);
@@ -169,6 +172,6 @@
     top: -25px;
 }
 
-.workContent .pText{
+.workContent .pText {
     align-self: flex-start;
 }

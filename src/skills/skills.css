@@ -44,12 +44,25 @@
     box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
     transform: translateY(-7px);
 }
+.skillsList div:hover p {
+    color: #5df6d7;
+}
 
 .skillsItem div p {
     font-weight: 500;
     margin-top: 0.5rem;
 }
-
+.skillsExpWork {
+    background-color: #14243e;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+.company {
+    color: #5df6d7;
+}
+.titleName {
+    color: #e2edfc;
+}
 @media screen and (max-width: 900px) {
     .skillsContainer {
         width: 100%;
@@ -75,5 +88,8 @@
     .skillsItem div {
         width: 70px;
         height: 70px;
+    }
+    .skillsExpWork {
+        margin: 1.5rem 1rem;
     }
 }

@@ -5,6 +5,7 @@
 }
 .headText {
     color: #e2edfc;
+    max-width: 600px;
 }
 
 .App-header {
@@ -132,6 +133,12 @@
         display: none;
     }
 }
+@media screen and (min-width: 500px) and (max-width: 590px) {
+    .appWrapper {
+        padding: 4rem 0rem;
+    }
+}
+
 #contact .socialMedia {
     display: none;
 }

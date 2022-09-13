@@ -55,8 +55,12 @@ const Skills = () => {
                                     className="skillsExpWork"
                                     key={work.name}
                                 >
-                                    <h4 className="boldText">{work.name}</h4>
-                                    <p className="pText">{work.company}</p>
+                                    <h4 className="boldText titleName">
+                                        {work.name}
+                                    </h4>
+                                    <p className="pText company">
+                                        {work.company}
+                                    </p>
                                     <p className="pText">{work.description}</p>
                                 </motion.div>
                             </div>

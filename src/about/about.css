@@ -32,8 +32,6 @@
     object-fit: cover;
 }
 
-
-
 @media screen and (min-width: 2000px) {
     .profileItem {
         width: 370px;
@@ -42,5 +40,10 @@
 
     .profileItem img {
         height: 320px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #about .headText {
+        margin: 4rem 1.5rem 2rem;
     }
 }

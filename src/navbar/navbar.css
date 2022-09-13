@@ -48,8 +48,8 @@
 }
 
 .appNavbarMobile {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -117,7 +117,7 @@
 .appNavbarMobile .closingMobile {
     width: 35px;
     height: 35px;
-    margin: 0.5rem 1rem;
+    margin: 1rem 1rem 2.5rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -133,7 +133,3 @@
     justify-content: flex-start;
     padding-right: 50px;
 }
-
-/* #navbar div .resume {
-height:45px;
-} */

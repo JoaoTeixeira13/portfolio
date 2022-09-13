@@ -30,12 +30,6 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-    .appHeader {
-        padding: 4rem 0;
-    }
-}
-
 .appHeaderInfo {
     flex: 0.65;
     display: flex;
@@ -69,6 +63,9 @@
     width: auto;
     box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
 }
+.badgeCmp div p {
+    color: #5df6d7;
+}
 .tagCmp {
     flex-direction: column;
     margin-top: 3rem;
@@ -96,6 +93,9 @@
 @media screen and (min-width: 1300px) {
     .appHeaderBadge {
         font-size: 1.5rem;
+    }
+    .badgeCmp div p {
+        font-size: 1.1rem;
     }
 }
 
@@ -137,4 +137,19 @@
     .appHeaderImg {
         margin: 2rem 0;
     }
+}
+@media screen and (max-width: 450px) {
+    .appHeader {
+        padding: 4rem 0;
+    }
+    .appHeaderBadge {
+        margin: 0 1rem;
+        font-size: 0.9rem;
+    }
+    .tagCmp {
+        margin-top: 2rem;
+    }
+    /* .appHeaderImg {
+        margin: 0;
+    } */
 }
