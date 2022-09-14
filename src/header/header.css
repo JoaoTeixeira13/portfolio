@@ -140,7 +140,7 @@
 }
 @media screen and (max-width: 450px) {
     .appHeader {
-        padding: 4rem 0;
+        padding: 4rem 0 0;
     }
     .appHeaderBadge {
         margin: 0 1rem;
@@ -149,7 +149,7 @@
     .tagCmp {
         margin-top: 2rem;
     }
-    /* .appHeaderImg {
-        margin: 0;
-    } */
+    .appHeaderImg img {
+        margin: 1rem 0.5rem;
+    }
 }
