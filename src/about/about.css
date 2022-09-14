@@ -31,6 +31,12 @@
     border-radius: 15px;
     object-fit: cover;
 }
+.aboutBio {
+    max-width: 600px;
+}
+.aboutWelcome {
+    color: #5df6d7;
+}
 
 @media screen and (min-width: 2000px) {
     .profileItem {
@@ -43,7 +49,7 @@
     }
 }
 @media screen and (max-width: 450px) {
-    #about .headText {
+    #about .aboutBio {
         margin: 4rem 1.5rem 2rem;
     }
 }

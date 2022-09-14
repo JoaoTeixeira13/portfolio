@@ -13,8 +13,8 @@ const Header = () => {
                 <div className="appHeaderBadge">
                     <div className="badgeCmp appFlex">
                         <div style={{ marginLeft: 20 }}>
-                            <p className="pText">Hello World! I am</p>
-                            <h1 className="headText">João</h1>
+                            <p className="pText">Hello World! My name is</p>
+                            <h1 className="headText">João.</h1>
                         </div>
                     </div>
                     <div className="tagCmp appFlex">

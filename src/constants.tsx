@@ -233,4 +233,14 @@ export const portfolioWorks: PortfolioWork[] = [
         techStack: "JavaScript, HTML, CSS & jQuery",
         tag: ["Web Application", "All"],
     },
+    {
+        id: 6,
+        title: "Portfolio",
+        description:
+            "The page you are currently viewing. A portfolio to showcase my works.",
+        repositoryUrl: "https://github.com/JoaoTeixeira13/portfolio",
+        imageUrl: "/works/portfolio.gif",
+        techStack: "TypeScript, React",
+        tag: ["Single Page Application", "Web Application", "React JS", "All"],
+    },
 ];

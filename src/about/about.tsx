@@ -7,12 +7,22 @@ import AppWrap from "../wrapper/appWrap";
 const AboutMe = () => {
     return (
         <>
-            <h2 className="headText">
-                {" "}
-                I am keen on learning new technologies, logic and systems'
-                patterns, problem solving and combining aesthetics with
-                functionality.{" "}
-            </h2>
+            <div className="aboutBio">
+                <p className="aboutWelcome pText">
+                    Welcome, nice to have you here!
+                </p>
+                <h2 className="headText">
+                    {" "}
+                    I am keen on learning new technologies, logic and systems'
+                    patterns, problem solving and combining aesthetics with
+                    functionality.{" "}
+                </h2>
+                <p className="pText">
+                    Prior to become a Software Engineer I studied Fashion
+                    Design, Fine Arts and ran my own business. When I am not
+                    coding, I enjoy playing chess and gardening.{" "}
+                </p>
+            </div>
             <div className="appProfiles">
                 {abouts.map((each: About) => {
                     return (
