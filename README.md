@@ -49,6 +49,7 @@ A single-page application website built with TypeScript and React where I showca
 <br>
 
 **_Mobile_**
+<br>
 <img src="public/readMe/mobile.gif">
 
 <br>
