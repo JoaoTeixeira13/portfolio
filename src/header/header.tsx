@@ -12,7 +12,7 @@ const Header = () => {
             >
                 <div className="appHeaderBadge">
                     <div className="badgeCmp appFlex">
-                        <div style={{ marginLeft: 20 }}>
+                        <div>
                             <p className="pText">Hello World! My name is</p>
                             <h1 className="headText">João.</h1>
                         </div>

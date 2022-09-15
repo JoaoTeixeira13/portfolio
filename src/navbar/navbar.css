@@ -10,7 +10,7 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 2;
-    border: 1px solid #230640;
+    border: 1px solid #071025;
 }
 
 #navbar div {
@@ -48,8 +48,8 @@
 }
 
 .appNavbarMobile {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -71,17 +71,14 @@
     right: 0;
     z-index: 5;
     color: #949db8;
+    box-sizing: content-box;
 
-    padding: 1rem;
-
-    width: 75vw;
+    width: 100vw;
     height: 100vh;
-
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    box-shadow: 0 0 20px rgba (168, 168, 168, 0.15);
 }
 .appNavbarMobile div a {
     width: 80%;
@@ -135,5 +132,4 @@
 }
 #navbar .mobileSlide {
     justify-content: center;
-    /* padding-right: 50px; */
 }
