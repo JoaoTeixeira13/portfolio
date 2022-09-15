@@ -2,7 +2,7 @@
 
 ## Live Website
 
-https://www.joaoteixeira.dev/
+<a href="https://www.joaoteixeira.dev/" target="_blank">https://www.joaoteixeira.dev/</a>
 
 ## Overview
 
