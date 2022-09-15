@@ -18,8 +18,8 @@ const AboutMe = () => {
                     functionality.{" "}
                 </h2>
                 <p className="pText">
-                    Prior to become a Software Engineer I studied Fashion
-                    Design, Fine Arts and ran my own business. When I am not
+                    Prior to becoming a Software Engineer I studied Fashion
+                    Design, Fine Arts and ran an e-commerce business. When I am not
                     coding, I enjoy playing chess and gardening.{" "}
                 </p>
             </div>

@@ -1,5 +1,9 @@
 # Portfolio
 
+## Live Website
+
+https://www.joaoteixeira.dev/
+
 ## Overview
 
 A single-page application website built with TypeScript and React where I showcase some of my work as a developer. Visitors can check the GitHub repository of each individual work by clicking on its correspondent image.
