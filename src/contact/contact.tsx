@@ -5,7 +5,7 @@ import SocialMedia from "../socialMedia";
 const Contact = () => {
     return (
         <>
-            <h2 className="headText">Lets have a chat!</h2>
+            <h2 className="headText">Let's have a chat!</h2>
             <div className="contactCards">
                 <div className="contactCard textBox">
                     <p className="pText">
