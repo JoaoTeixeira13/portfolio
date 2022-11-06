@@ -37,6 +37,10 @@
 .aboutWelcome {
     color: #5df6d7;
 }
+.pText a {
+    text-decoration: none;
+    color: #5df6d7;
+}
 
 @media screen and (min-width: 2000px) {
     .profileItem {

@@ -9,9 +9,11 @@ const Contact = () => {
             <div className="contactCards">
                 <div className="contactCard textBox">
                     <p className="pText">
-                        If you have any questions, want to discuss anything tech
-                        related, play a game of chess or just say hi, feel free
-                        to reach out!
+                        Although I am currently not looking for a job
+                        opportunity, I am always happy to connect. If you have
+                        any questions, want to discuss anything tech related,
+                        play a game of chess or just say hi, feel free to reach
+                        out!
                     </p>
                 </div>
                 <div className="contactCard">

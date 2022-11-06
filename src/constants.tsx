@@ -145,6 +145,13 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 15,
+        name: "Jest",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+        backgroundColor: "",
+    },
+    {
         id: 14,
         name: "Git",
         imageUrl:
@@ -155,17 +162,26 @@ export const skills: Skill[] = [
 
 export const experiences: Experience[] = [
     {
-        id: 1,
-        name: "Tech orientation",
-        company: "StartSteps",
-        description:
-            "Project based topics: Data Analytics, Web Development, UX/UI Design, Cybersecurity, Digital Marketing, Project Management, Agile Methodologies.",
+        id: 3,
+        name: "Junior Software Engineer",
+        company: "MaibornWolff GmbH",
+        description: "Full Stack Application Development in Agile environment.",
+        period: "11/22-present",
     },
     {
         id: 2,
         name: "Full Stack Web Developer",
         company: "Spiced Academy",
         description: "12 weeks intensive full time program.",
+        period: "05/22-08/22",
+    },
+    {
+        id: 1,
+        name: "Tech orientation",
+        company: "StartSteps",
+        description:
+            "Project based topics: Data Analytics, Web Development, UX/UI Design, Cybersecurity, Digital Marketing, Project Management, Agile Methodologies.",
+        period: "02/22-03/22",
     },
 ];
 

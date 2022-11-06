@@ -18,9 +18,21 @@ const AboutMe = () => {
                     functionality.{" "}
                 </h2>
                 <p className="pText">
+                    Currently, I am focused on building customer tailored
+                    products at{" "}
+                    <a
+                        href="https://www.maibornwolff.de/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        MaibornWolff
+                    </a>
+                    .
+                </p>
+                <p className="pText">
                     Prior to becoming a Software Engineer I studied Fashion
-                    Design, Fine Arts and ran an e-commerce business. When I am not
-                    coding, I enjoy playing chess and gardening.{" "}
+                    Design, Fine Arts and ran an e-commerce business. When I am
+                    not coding, I enjoy playing chess and gardening.{" "}
                 </p>
             </div>
             <div className="appProfiles">

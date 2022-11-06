@@ -61,6 +61,8 @@ const Skills = () => {
                                     <p className="pText company">
                                         {work.company}
                                     </p>
+                                    <p>{work.period}</p>
+
                                     <p className="pText">{work.description}</p>
                                 </motion.div>
                             </div>

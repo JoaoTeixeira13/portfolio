@@ -56,4 +56,5 @@ export interface Experience {
     name: string;
     company: string;
     description: string;
+    period: string;
 }
