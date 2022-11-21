@@ -81,6 +81,13 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 16,
+        name: "Angular",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+        backgroundColor: "",
+    },
+    {
         id: 3,
         name: "Vue JS",
         imageUrl:
