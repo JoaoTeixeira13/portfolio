@@ -25,7 +25,7 @@ export const abouts: About[] = [
         id: 3,
         title: "Frontend Development",
         description:
-            "I use JavaScript and its libraries to build interactive web interfaces. I strive to provide users with the best experience possible centered around sound design principles. ",
+            "I use JavaScript / TypeScript and their frameworks to build interactive web interfaces. I strive to provide users with the best experience possible centered around sound design principles. ",
         imgUrl: "/front-end.jpg",
     },
 ];
@@ -81,6 +81,13 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 17,
+        name: "GraphQL",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+        backgroundColor: "",
+    },
+    {
         id: 16,
         name: "Angular",
         imageUrl:
@@ -88,10 +95,23 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 18,
+        name: "RxJS",
+        imageUrl: "https://rxjs.dev/assets/images/favicons/favicon-192x192.png",
+        backgroundColor: "",
+    },
+    {
         id: 3,
         name: "Vue JS",
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+        backgroundColor: "",
+    },
+    {
+        id: 19,
+        name: "Vuetify",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg",
         backgroundColor: "",
     },
     {
