@@ -179,6 +179,12 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 20,
+        name: "Vitest",
+        imageUrl: "https://vitest.dev/logo-shadow.svg",
+        backgroundColor: "",
+    },
+    {
         id: 14,
         name: "Git",
         imageUrl:
