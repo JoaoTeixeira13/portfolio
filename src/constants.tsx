@@ -191,6 +191,13 @@ export const skills: Skill[] = [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         backgroundColor: "",
     },
+    {
+        id: 21,
+        name: "Jira",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+        backgroundColor: "",
+    },
 ];
 
 export const experiences: Experience[] = [
